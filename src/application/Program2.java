@@ -5,6 +5,7 @@ import java.util.Scanner;
 import model.dao.Daofactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
+import model.entities.Seller;
 
 public class Program2 {
 
@@ -19,6 +20,16 @@ public class Program2 {
 		Department newdepartment = new Department(0, "Brinquedos");
 		departmentDao.insert(newdepartment);
 		System.out.println("Inserted New id = " + newdepartment.getId());
+		
+		System.out.println("\n ===== TEST 2: Department FIND BY ID ======");
+		
+		Department dep = departmentDao.findById(3);
+		
+		System.out.println(dep);
+		
+		
+    
+		
 		
 		
 		
